@@ -19,6 +19,7 @@ services:
     restart: unless-stopped
     ports:
       - 15692:15692
+      - 15672:15672
       - 5672:5672
     healthcheck:
       test: rabbitmq-diagnostics -q ping
